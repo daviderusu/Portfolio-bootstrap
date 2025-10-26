@@ -1,0 +1,186 @@
+/* =============================
+   STYLE.CSS — Light & Fresh Portfolio
+   ============================= */
+
+/* --- Root colors --- */
+:root {
+  --primary: #0d6efd;
+  --primary-light: #e8f0ff;
+  --text-color: #333;
+  --muted: #6c757d;
+  --bg-light: #f8f9fa;
+  --white: #ffffff;
+}
+
+/* --- Global styles --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--white);
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* --- Navbar --- */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary) !important;
+}
+
+/* --- Hero section --- */
+#home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, var(--white) 0%, var(--primary-light) 100%);
+}
+
+#home .btn-primary {
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+#home img {
+  border-radius: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#home img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- About --- */
+#about .progress {
+  background-color: var(--primary-light);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#about .progress-bar {
+  border-radius: 10px;
+}
+
+#about .card {
+  border-radius: 20px;
+  background: var(--white);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Portfolio --- */
+#portfolio .project-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portfolio .project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio .project-card img {
+  transition: transform 0.4s ease;
+}
+
+#portfolio .project-card:hover img {
+  transform: scale(1.05);
+}
+
+#portfolio button.btn-outline-secondary.active {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+
+/* --- Testimonials --- */
+#testimonials .card {
+  border-radius: 20px;
+  background: var(--white);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+#testimonials img {
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(50%);
+}
+
+/* --- Contact --- */
+#contact form .form-control {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact form .form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+#contact button {
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(13, 110, 253, 0.3);
+}
+
+/* --- Footer --- */
+footer {
+  border-top: 1px solid #eaeaea;
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--primary);
+}
+
+/* --- Responsive --- */
+@media (max-width: 991px) {
+  header#home {
+    text-align: center;
+  }
+  header#home img {
+    margin-top: 30px;
+  }
+}
